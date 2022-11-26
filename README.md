@@ -33,3 +33,6 @@ Queue (QueueID int (счетчик, PK), OperatorID int (FK), RegistrationDate d
 - на всякий случай проверяет, что для данного OperatorID  в таблице Operators.IsWorking = 1, если 0 – выходим;
 - проверяет нет ли у данного OperatorID на сегодня записей в очереди с вызванными, но не обслуженными клиентами, если есть, то вызывает исключение, по тексту которого должно быть понятно какой  CustomerFullName и QueueNumber не обслужен;
 - устанавливает в таблице Operators.IsWorking = 0 для данного OperatorID.
+
+## Contributors:
+- Vladislave:) [hawwyo](https://github.com/hawwyo)
